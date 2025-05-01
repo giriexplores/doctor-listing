@@ -128,14 +128,14 @@ export default function DoctorsListing() {
 
           <div className="flex justify-center gap-4 mt-6">
             <button
-              className="px-4 py-2 bg-blue-500 text-white rounded-md disabled:bg-gray-300"
+              className="px-4 py-2 bg-emerald-800 font-semibold text-white rounded-md disabled:bg-gray-300"
               disabled={page === 1}
               onClick={() => setPage((prev) => prev - 1)}
             >
               Previous
             </button>
             <button
-              className="px-4 py-2 bg-blue-500 text-white rounded-md disabled:bg-gray-300"
+              className="px-4 py-2 bg-emerald-800 font-semibold text-white rounded-md disabled:bg-gray-300"
               disabled={page * limit >= totalDoctors}
               onClick={() => setPage((prev) => prev + 1)}
             >

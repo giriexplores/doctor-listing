@@ -40,7 +40,7 @@ export default function SidebarFilters({
           <input
             type="checkbox"
             name="Physical"
-            // defaultChecked={filters.modeOfConsult.startsWith("1")}
+            className="accent-emerald-800"
             checked={filters.modeOfConsult.startsWith("1")}
             value={1}
             onChange={(e) => onFilterChange(e)}
@@ -51,7 +51,7 @@ export default function SidebarFilters({
           <input
             type="checkbox"
             name="Online"
-            // defaultChecked={filters.modeOfConsult.endsWith("1")}
+            className="accent-emerald-800"
             checked={filters.modeOfConsult.endsWith("1")}
             value={1}
             onChange={(e) => onFilterChange(e)}
@@ -68,6 +68,7 @@ export default function SidebarFilters({
               <input
                 type="checkbox"
                 value={experience}
+                className="accent-emerald-800"
                 checked={filters.experience.includes(experience)}
                 name="experience"
                 onChange={(e) => onFilterChange(e)}
@@ -89,6 +90,7 @@ export default function SidebarFilters({
               <input
                 type="checkbox"
                 value={fee}
+                className="accent-emerald-800"
                 checked={filters.consultationFee.includes(fee)}
                 name="consultationFee"
                 onChange={(e) => onFilterChange(e)}
@@ -106,6 +108,7 @@ export default function SidebarFilters({
               <input
                 type="checkbox"
                 value={language}
+                className="accent-emerald-800"
                 checked={filters.languages.includes(language)}
                 name="languages"
                 onChange={(e) => onFilterChange(e)}
